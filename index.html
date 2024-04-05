@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIPSAT | Servicio especializado en last mile para negocios y empresas enfocados en e-comerce.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="svg/truck.svg" type="image/x-icon">
+</head>
+<body class="font-sans">
+    <!--Header para celulares-->
+    <div class="sm:hidden">
+        <header class="w-full fixed bg-[red]/70 backdrop-blur-sm z-10">
+            <nav class="left-0 top-0 w-full p-6 text-white">
+                <div class="flex justify-between items-center px-6">
+                    <a href="index.html">
+                        <figure>
+                            <img src="img/icono.png" alt="logo de shipsat">
+                        </figure>
+                    </a>
+
+                    <button id="boton">
+                        <img src="svg/Menu.svg" alt="imagen menu">
+                    </button>
+                </div>       
+                <div id="nav" class="hidden">
+                    <ul class="text-center flex flex-col justify-center gap-20 px-6 py-10 mx-auto text-2xl">
+                        <li class="link"><a href="#inicio">INICIO</a></li>
+                        <li class="link"><a href="#nosotros">NOSOTROS</a></li>
+                        <li class="link"><a href="#ubicacion">UBICACION</a></li>
+                        <li class="link"><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>       
+            </nav>
+        </header>
+    </div>
+    
+    <!--Header a partir de tablets-->
+    <div class="hidden sm:block">
+        <header class="w-full fixed bg-[red]/70 backdrop-blur-sm z-10">
+            <nav class="left-0 top-0 w-full mx-auto p-6 text-white md:w-11/12 lg:w-10/12">
+                <div class="flex justify-between items-center px-6">
+                    <a href="index.html">
+                        <figure>
+                            <img src="img/icono.png" alt="logo de shipsat">
+                        </figure>
+                    </a>
+                    <ul class="flex gap-6 font-medium">
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#nosotros">NOSOTROS</a></li>
+                        <li><a href="#ubicacion">UBICACION</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+        </header>
+    </div>
+    
+    <main>
+        <!--Sección Principal-->
+        <section class="w-full flex items-center justify-center h-screen bg-[url('/img/banner-bg.png')] bg-cover" id="inicio">
+            <div class="w-11/12 mx-auto flex flex-col items-center gap-4 justify-between backdrop-blur-sm py-10 px-6 rounded-md border mt-16 border-white/30 drop-shadow-lg lg:flex-row lg:items-start lg:py-0">
+                <article class="flex flex-col gap-4 w-full text-pretty text-white mt-10 lg:w-4/6">
+                    <h1 class="text-5xl font-bold drop-shadow-md">SHIP - SIEMPRE A TIEMPO</h1>
+                    <p class="text-xl tracking-wider font-medium text-white/90 drop-shadow-md">
+                        Servicio especializado en <span>Last Mile</span>, la mejor opción para empresas y negocios especializados en e-commerce.
+                    </p>
+                    <p class="text-lg tracking-wider text-white/90 font-medium drop-shadow-md">Líderes en soluciones integrales, inteligentes de e-commerce para B2B.</p>
+    
+                </article>
+                <figure>
+                    <img class="w-[570px]" src="img/img-4.png" alt="imagen de repartos">
+                </figure>    
+            </div>
+        </section>
+
+        <!--Sección Cararcteristicas de la empresa y anuncios-->
+        <section>
+            <article class="w-10/12 flex gap-6 items-streech justify-center mx-auto pt-10 text-white/90 flex-col lg:flex-row">
+                <div class="bg-[red]/80 flex-1 px-6 py-12">
+                    <figure class="flex justify-center">
+                        <img class="w-20" src="svg/Car.svg" alt="icono-caracteristicas-empresa">
+                    </figure>
+                    <h4 class="font-semibold text-xl mt-8">Traslado de personal</h4>
+                    <p class="mt-2 text-pretty">Nuestra cultura es apoyar la movilidad y productividad del personal. Cuidamos del capital humano de todas las empresas, trasladándolo de forma segura a su organización.</p>
+                </div>
+                <div class="bg-[red]/80 flex-1 px-6 py-12">
+                    <figure class="flex justify-center">
+                        <img class="w-20" src="svg/Pin_Map.svg" alt="icono-caracteristicas-empresa">
+                    </figure>
+                    <h4 class="font-semibold text-xl mt-8">Last Mile</h4>
+                    <p class="mt-2" text-pretty>Servicio integral de B2B en el mundo del e-commerce, en donde día a día se generan más empleos. Nos adaptamos a las nuevas tendencias de mercado, creando la mejor experiencia para la satisfacción de los clientes.</p>
+                </div>
+                <div class="bg-[red]/80 flex-1  px-6 py-12">
+                    <figure class="flex justify-center">
+                        <img class="w-20" src="svg/seeding.svg" alt="icono-caracteristicas-empresa">
+                    </figure>
+                    <h4 class="font-semibold text-xl mt-8">Sustentables</h4>
+                    <p class="mt-2 text-pretty">Socialmente comprometidos con el medio ambiente para crear un mundo mejor. Contamos con unidades eléctricas que mitigan las emisiones de CO2.</p>
+                </div>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+
+        <!--Sección Sobre nosotros-->
+        <section id="nosotros" class="pt-10">
+            <div class="w-11/12 flex mx-auto gap-8 py-10 flex-col lg:flex-row">
+                <figure>
+                    <img src="img/img-2.png" alt="imagen quienes somos?" class="w-[1200px] aspect-video object-cover ">
+                </figure>
+                <article class="flex flex-col gap-6">
+                    <h2 class="font-bold text-4xl text-[red]/90">
+                        ¿QUIÉNES SOMOS?
+                    </h2>
+                    <p>Durante 9 años transformamos los retos de Last Mile, para convertirlos en oportunidades, esto con el fin de brindar el mejor servicio de logística terrestre a nivel nacional.
+                    </p>
+                    <p>
+                        Las empresas transnacionales de mayor prestigio han depositado su confianza en nosotros; gracias a esto seguimos creando nuevas alianzas comerciales con soluciones eficaces e Innovadoras.
+                    </p>
+                </article>
+            </div>
+            <div class="w-11/12 flex mx-auto gap-8 py-10 flex-col-reverse lg:flex-row">
+                <article class="flex flex-col gap-6 lg:gap-2 ">
+                    <p>
+                        Nuestro equipo de profesionales está en constante capacitación para brindar el mejor servicio a todos nuestros clientes. 
+                    </p>
+                    <p>
+                        Nos sentimos comprometidos con todas las almas que laboran en esta empresa, ofreciéndoles las mejores herramientas de trabajo, un ambiente sano para laborar y todo lo que está a nuestro alcance para superar las expectativas de nuestros exclusivos clientes.
+                    </p>
+                    <p>
+                        Por ende, el servicio que ofrecemos de Última Milla, nos coloca como lideres en el mundo del e-commerce frente a nuestros socios comerciales. 
+                    </p>
+                    <span class="font-medium text-[red]/90">Estamos cada vez más cerca de ti, para que todo envió llegue <strong class="italic">“SIEMPRE A TIEMPO”</strong>.</span>
+                </article>
+                <figure>
+                    <img class="w-[2000px] aspect-video object-cover " src="img/img-3.png" alt="imagen quienes somos">
+                </figure>
+            </div>
+        </section>
+        
+        <!--Sección Sustentabiidad-->
+        <section class="bg-[red]/90  py-20 text-white/90 ">
+            <article class="w-10/12 text-center text-center mx-auto flex flex-col gap-4">
+                <h3 class="font-semibold text-3xl">SHIP "SIEMPRE A TIEMPO, SIEMPRE SUSTENTABLE"</h3>
+                <span> ¡Somos conscientes del medio ambiente!</span>
+                <p class="">                    
+                    La cultura ambiental es muy importante para nosotros, por lo que implementar la medición de nuestra Huella de Carbono es esencial para reducir los efectos de la contaminación con un plan estratégico de movilidad eléctrica. Esto nos encamina a ser una empresa Zero Emissions y generar un impacto positivo en nuestro medio ambiente.</p>
+            </article>
+        </section>
+        
+        <!--Sección de Ubicación-->
+        <section id="ubicacion" class="py-20">
+            <div class="w-10/12 mx-auto text-white text-center">
+                <h2 class="text-5xl font-bold text-[red]/90">Cada vez más cerca de ti</h2>
+                <article class="mt-10 mx-auto flex flex-col gap-16 items-start justify-center lg:flex-row">
+                    <figure>
+                        <img class="w-[750px] mx-auto" src="svg/Mexico_Map.svg" alt="mapa de méxico">
+                    </figure>
+                    <div class="text-[red]/90 w-full text-left flex flex-col px-16 lg:w-2/3 sm:flex-row sm:gap-16">
+                        <ul class="list-disc mx-auto">
+                            <li>Aguascalientes</li>
+                            <li>B.C.</li>
+                            <li>B.C.S.</li>
+                            <li>Campeche</li>
+                            <li>Chiapas</li>
+                            <li>CDMX</li>
+                            <li>Colima</li>
+                            <li>Guanajuato</li>
+                            <li>Guerrero</li>
+                            <li>Hidalgo</li>
+                            <li>Jalisco</li>
+                            <li>Edo. Mex.</li>
+                            <li>Michoacán</li>
+                        </ul>
+                        <ul class="list-disc mx-auto">
+                            <li>Morelos</li>
+                            <li>Nayarit</li>
+                            <li>Nuevo León</li>
+                            <li>Oaxaca</li>
+                            <li>Puebla</li>
+                            <li>Querétaro</li>
+                            <li>Quintana Roo</li>
+                            <li>San Luis Potosí</li>
+                            <li>Tabasco</li>
+                            <li>Tlaxcala</li>
+                            <li>Veracruz</li>
+                            <li>Yucatán</li>
+                            <li>Zacatecas</li>
+                        </ul>
+                    </div>
+                    
+                </article>
+            </div>
+        </section>
+
+        <!--Sección de Mejor Opción-->
+        <section class="bg-[red]/90  py-20 text-white/90 ">
+            <article class="w-10/12 text-center text-center mx-auto flex flex-col gap-4">
+                <h3 class="font-semibold text-3xl">Somos la primera opción de Última Milla para ti</h3>
+                <div class="flex flex-col gap-6">
+                    <span>Nuestra premisa es ser la mejor y única opción en la cadena de valor para tu negocio en el mundo del <strong class="italic">e-commerce</strong>.
+                    </span>
+                    <p class="">                    
+                        El impacto comercial que se genera con el servicio de última Milla, nos ha permitido aumentar de manera favorable la rentabilidad de las empresas en un mundo tan competitivo. Generamos la mejor experiencia de usuario, con rutas dinámicas, tecnología innovadora para que tus envíos lleguen <strong class="italic">SIEMPRE A TIEMPO</strong>.
+                    </p>
+                </div>
+                
+            </article>
+        </section>
+        
+    </main>
+
+    <footer class="py-10 bg-black">
+        <section id="contacto" class="w-10/12 mx-auto">
+            <div class="w-full mx-auto flex flex-col items-center justify-between mb-10 gap-10 text-white md:flex-row md:w-4/5 md:gap-0">
+                <div class="flex flex-col gap-4  md:gap-0">
+                    <span class="text-white text-xl md:text-md">CONTACTO</span>
+                    <a class="text-white/90 text-center hover:text-[red]/90 transition-all cursor-pointer" href="https://api.whatsapp.com/send?phone=5543558623" target="_blank">5543558623</a>
+                </div>
+                <div class="flex flex-col gap-4  md:gap-0">
+                    <span class="text-center text-xl md:text-md">CORREO</span>
+                    <a class="text-white/90 text-center hover:text-[red]/90 transition-all cursor-pointer" href="mailto:info@shipsat.com.mx" target="_blank">info@shipsat.com.mx</a>
+                </div>
+                <div class="flex flex-col gap-4  md:gap-0">
+                    <span class="text-white text-xl md:text-md">REDES SOCIALES</span>
+                    <ul class="flex gap-6 justify-center">
+                        <li><a href="https://www.facebook.com/profile.php?id=100068553884856" target="_blank"> <img class="hover:scale-125 hover:text-[red]/90 transition-all" src="svg/facebook.svg" alt="facebook logo"> </a></li>
+                        <li><a href="https://www.instagram.com/ship_siempre_a_tiempo?igshid=Mzc1MmZhNjY%3D" target="_blank"> <img class="hover:scale-125 hover:text-[red]/90 transition-all" src="svg/instagram.svg" alt="instagram logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="text-center pb-4">
+            <div class="mx-auto w-10/12 text-center">
+                <a class="text-white/90 hover:text-[red]/80 transition-all mt-10" href="aviso.html">AVISO DE PRIVACIDAD</a>
+            </div> 
+            
+        </section>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
